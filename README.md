@@ -21,4 +21,4 @@
 
 Ниже представляю превью моего сайта для быстрого просмотра:
 
-<a href="https://ibb.co/5cBq4Jp"><img src="https://i.ibb.co/SvRqyZY/Kidz-School.png" alt="Kidz-School" border="0"></a>
+<a href="https://ibb.co/vLMfny5"><img src="https://i.ibb.co/RQJtwrn/Kidz-School.png" alt="Kidz-School" border="0"></a>
