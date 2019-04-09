@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Kidz School</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Dosis:500,600,700|Open+Sans:400,600" rel="stylesheet">
+	<link rel='icon' href='img/favicon.ico' type='image/x-icon'>
+</head>
+<body>
+	<header class="page-header line">
+		<div class="container">
+			<img src="img/logo.png" width="166" height="50" alt="Logo">
+			<ul class="page-header__list">
+				<li class="page-header__item">
+					<a href="" class="page-header__link  page-header__link--yellow page-header__link--current">Home</a>
+				</li>
+				<li class="page-header__item">
+					<a href="" class="page-header__link page-header__link--green">Courses</a>
+				</li>
+				<li class="page-header__item">
+					<a href="" class="page-header__link page-header__link--red">Pages</a>
+				</li>
+				<li class="page-header__item">
+					<a href="" class="page-header__link page-header__link--blue">Blog</a>
+				</li>
+				<li class="page-header__item">
+					<a href="" class="page-header__link page-header__link--violet">Events</a>
+				</li>
+				<li class="page-header__item">
+					<a href="" class="page-header__link page-header__link--pink">Components</a>
+			</li>
+			</ul>
+		</div>
+	</header>
+	<main class="page-main">
+		<svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+			<symbol id="svg_courses" viewBox="0 0 384 512">
+				<path d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"/>
+			</symbol>
+			<symbol id="svg_events" viewBox="0 0 448 512">
+				<path d="M400 64h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm-6 400H54c-3.3 0-6-2.7-6-6V160h352v298c0 3.3-2.7 6-6 6z"/>
+			</symbol>
+			<symbol id="svg_gallery" viewBox="0 0 576 512">
+				<path d="M480 416v16c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V176c0-26.51 21.49-48 48-48h16v48H54a6 6 0 0 0-6 6v244a6 6 0 0 0 6 6h372a6 6 0 0 0 6-6v-10h48zm42-336H150a6 6 0 0 0-6 6v244a6 6 0 0 0 6 6h372a6 6 0 0 0 6-6V86a6 6 0 0 0-6-6zm6-48c26.51 0 48 21.49 48 48v256c0 26.51-21.49 48-48 48H144c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h384zM264 144c0 22.091-17.909 40-40 40s-40-17.909-40-40 17.909-40 40-40 40 17.909 40 40zm-72 96l39.515-39.515c4.686-4.686 12.284-4.686 16.971 0L288 240l103.515-103.515c4.686-4.686 12.284-4.686 16.971 0L480 208v80H192v-48z"/>
+			</symbol>
+			<symbol id="svg_news" viewBox="0 0 448 512">
+				<path d="M433.941 65.941l-51.882-51.882A48 48 0 0 0 348.118 0H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h224c26.51 0 48-21.49 48-48v-48h80c26.51 0 48-21.49 48-48V99.882a48 48 0 0 0-14.059-33.941zM266 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h74v224c0 26.51 21.49 48 48 48h96v42a6 6 0 0 1-6 6zm128-96H182a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h106v88c0 13.255 10.745 24 24 24h88v202a6 6 0 0 1-6 6zm6-256h-64V48h9.632c1.591 0 3.117.632 4.243 1.757l48.368 48.368a6 6 0 0 1 1.757 4.243V112z"/>
+			</symbol>
+			<symbol id="svg_clock" viewBox="0 0 512 512">
+				<path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"/>
+			</symbol>
+			<symbol id="svg_basket" viewBox="0 0 576 512">
+				<path d="M576 216v16c0 13.255-10.745 24-24 24h-8l-26.113 182.788C514.509 462.435 494.257 480 470.37 480H105.63c-23.887 0-44.139-17.565-47.518-41.212L32 256h-8c-13.255 0-24-10.745-24-24v-16c0-13.255 10.745-24 24-24h67.341l106.78-146.821c10.395-14.292 30.407-17.453 44.701-7.058 14.293 10.395 17.453 30.408 7.058 44.701L170.477 192h235.046L326.12 82.821c-10.395-14.292-7.234-34.306 7.059-44.701 14.291-10.395 34.306-7.235 44.701 7.058L484.659 192H552c13.255 0 24 10.745 24 24zM312 392V280c0-13.255-10.745-24-24-24s-24 10.745-24 24v112c0 13.255 10.745 24 24 24s24-10.745 24-24zm112 0V280c0-13.255-10.745-24-24-24s-24 10.745-24 24v112c0 13.255 10.745 24 24 24s24-10.745 24-24zm-224 0V280c0-13.255-10.745-24-24-24s-24 10.745-24 24v112c0 13.255 10.745 24 24 24s24-10.745 24-24z"/>
+			</symbol>
+			<symbol id="svg_comment" viewBox="0 0 576 512">
+				<path d="M416 192c0-88.4-93.1-160-208-160S0 103.6 0 192c0 34.3 14.1 65.9 38 92-13.4 30.2-35.5 54.2-35.8 54.5-2.2 2.3-2.8 5.7-1.5 8.7S4.8 352 8 352c36.6 0 66.9-12.3 88.7-25 32.2 15.7 70.3 25 111.3 25 114.9 0 208-71.6 208-160zm122 220c23.9-26 38-57.7 38-92 0-66.9-53.5-124.2-129.3-148.1.9 6.6 1.3 13.3 1.3 20.1 0 105.9-107.7 192-240 192-10.8 0-21.3-.8-31.7-1.9C207.8 439.6 281.8 480 368 480c41 0 79.1-9.2 111.3-25 21.8 12.7 52.1 25 88.7 25 3.2 0 6.1-1.9 7.3-4.8 1.3-2.9.7-6.3-1.5-8.7-.3-.3-22.4-24.2-35.8-54.5z"/>
+			</symbol>
+			<symbol id="svg_user" viewBox="0 0 448 512">
+				<path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"/>
+			</symbol>
+			<symbol id="svg_letter" viewBox="0 0 512 512">
+				<path d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"/>
+			</symbol>
+		</svg>
+
+		<section class="brief">
+			<div class="container">
+				<h2 class="brief__title">Lorem Ipsum Dolar</h2>
+				<p class="brief__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor</p>
+				<ul class="brief__list">
+					<li class="brief__item">
+						<a class="brief__link brief__link--yellow" href="#section_courses">Courses
+							<svg class="inline-svg-icon" width="30" height="30">
+  							<use xlink:href="#svg_courses"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="brief__item">
+						<a class="brief__link brief__link--green" href="#section_events">Events
+							<svg class="inline-svg-icon" width="30" height="30">
+  							<use xlink:href="#svg_events"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="brief__item">
+						<a class="brief__link brief__link--red" href="#section_gallery">Gallery
+							<svg class="inline-svg-icon" width="30" height="30">
+  							<use xlink:href="#svg_gallery"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="brief__item">
+						<a class="brief__link brief__link--blue" href="#section_news">News
+							<svg class="inline-svg-icon" width="30" height="30">
+  							<use xlink:href="#svg_news"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="features container">
+			<h2 class="features__main-title main-title">Our Features</h2>
+			<ul class="features__list">
+				<li class="features__item">
+					<h3 class="features__title features__title--yellow">Experience Teachers</h3>
+					<p class="features__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+				</li>
+				<li class="features__item">
+					<h3 class="features__title features__title--green">Physical Activity</h3>
+					<p class="features__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+				</li>
+				<li class="features__item">
+					<h3 class="features__title features__title--red">Transportation</h3>
+					<p class="features__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+				</li>
+				<li class="features__item">
+					<h3 class="features__title features__title--blue">Delicious Food</h3>
+					<p class="features__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+				</li>
+				<li class="features__item">
+					<h3 class="features__title features__title--violet">Love & Care</h3>
+					<p class="features__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+				</li>
+				<li class="features__item">
+					<h3 class="features__title features__title--pink">Many Sports</h3>
+					<p class="features__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+				</li>
+			</ul>
+		</section>
+		
+		<section class="inf">
+			<div class="container">
+				<h2 class="inf__title">Need More Information?</h2>
+				<p class="inf__description">Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod</p>
+				<a href="#section_contact" class="inf__btn btn">Contact</a>
+			</div>
+		</section>
+
+		<section class="courses container" id="section_courses">
+			<h2 class="courses__main-title main-title">Our Courses</h2>
+			<div class="courses__wrapper">
+				<article class="courses__part courses__part--yellow">
+					<h3 class="courses__title">Morbi scelerisque nibh.</h3>
+					<span class="courses__price">$50</span>
+					<p class="courses__description">
+						<span class="courses__span">
+							Age 2 to 4 Years
+							<svg class="inline-svg-courses" width="14" height="14">
+  							<use xlink:href="#svg_events"></use>
+							</svg>
+						</span>
+						<span class="courses__span">
+							9.00AM-11.00AM
+							<svg class="inline-svg-courses" width="14" height="14">
+  							<use xlink:href="#svg_clock"></use>
+							</svg>
+						</span>
+						It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+					</p>
+					<button class="courses__button">
+						Add To Cart
+						<svg class="inline-svg-courses inline-svg-courses--button" width="16" height="16">
+  							<use xlink:href="#svg_basket"></use>
+							</svg>
+					</button>
+					<a href="#" class="courses__link"> &#187 More</a>
+				</article>
+				<article class="courses__part courses__part--green">
+					<h3 class="courses__title">Phasellus convallis eros.</h3>	
+					<span class="courses__price">$50</span>
+					<p class="courses__description">
+						<span class="courses__span">
+							Age 2 to 4 Years
+							<svg class="inline-svg-courses" width="14" height="14">
+  							<use xlink:href="#svg_events"></use>
+							</svg>
+						</span>
+						<span class="courses__span">
+							9.00AM-11.00AM
+							<svg class="inline-svg-courses" width="14" height="14">
+  							<use xlink:href="#svg_clock"></use>
+							</svg>
+						</span>
+						Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search.
+					</p>
+					<button class="courses__button">
+						Add To Cart
+						<svg class="inline-svg-courses inline-svg-courses--button" width="16" height="16">
+  							<use xlink:href="#svg_basket"></use>
+							</svg>
+					</button>
+					<a href="#" class="courses__link"> &#187 More</a>
+				</article>
+				<article class="courses__part courses__part--red">
+					<h3 class="courses__title">Suspendisse a libero da.</h3>
+					<span class="courses__price">$50</span>
+					<p class="courses__description">
+						<span class="courses__span">
+							Age 2 to 4 Years
+							<svg class="inline-svg-courses" width="14" height="14">
+  							<use xlink:href="#svg_events"></use>
+							</svg>
+						</span>
+						<span class="courses__span">
+							9.00AM-11.00AM
+							<svg class="inline-svg-courses" width="14" height="14">
+  							<use xlink:href="#svg_clock"></use>
+							</svg>
+						</span>
+						There are many variations of pas-sages of Lorem Ipsum available, but the majority have suffered altera-tion in some form.
+					</p>
+					<button class="courses__button">
+						Add To Cart
+						<svg class="inline-svg-courses inline-svg-courses--button" width="16" height="16">
+  							<use xlink:href="#svg_basket"></use>
+							</svg>
+					</button>
+					<a href="#" class="courses__link"> &#187 More</a>
+				</article>
+				<article class="courses__part courses__part--blue">
+					<h3 class="courses__title">Aenean cursus urna nec.</h3>
+					<span class="courses__price">$50</span>
+					<p class="courses__description">
+						<span class="courses__span">
+							Age 2 to 4 Years
+							<svg class="inline-svg-courses" width="14" height="14">
+  							<use xlink:href="#svg_events"></use>
+							</svg>
+						</span>
+						<span class="courses__span">
+							9.00AM-11.00AM
+							<svg class="inline-svg-courses" width="14" height="14">
+  							<use xlink:href="#svg_clock"></use>
+							</svg>
+						</span>
+						Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.
+					</p>
+					<button class="courses__button">
+						Add To Cart
+						<svg class="inline-svg-courses inline-svg-courses--button" width="16" height="16">
+  							<use xlink:href="#svg_basket"></use>
+							</svg>
+					</button>
+					<a href="#" class="courses__link"> &#187 More</a>
+				</article>
+			</div>
+		</section>
+
+		<section class="teachers">
+			<div class="container">
+				<h2 class="teachers__main-title main-title">Meet Our Teachers</h2>
+				<div class="teachers__main-wrapper">
+					<button class="teachers__btn teachers__btn--backwards">
+						<span class="visually-hidden">Backwards</span>
+					</button>
+					<div class="teachers__js-wrapper">
+						<ul class="teachers__list">
+							<li class="teachers__item teachers__item--yellow">
+								<img class="teachers__photo" src="img/teacher-1.jpg" alt="Amanda Stone" width="150" height="150">
+								<div class="teachers__link-wrapper">
+									<ul class="teachers__link-list">
+										<li class="teachers__link-item">
+											<a class="teachers__links teachers__links--tw" href="">
+												<span class="visually-hidden">Twitter</span>
+											</a>
+										</li>
+										<li class="teachers__link-item">
+											<a class="teachers__links teachers__links--in" href="">
+												<span class="visually-hidden">LinkedIn</span>
+											</a>
+										</li>
+										<li class="teachers__link-item">
+											<a class="teachers__links teachers__links--fb" href="">
+												<span class="visually-hidden">Facebook</span>
+											</a>
+										</li>
+										<li class="teachers__link-item">
+											<a class="teachers__links teachers__links--sk" href="">
+												<span class="visually-hidden">Skype</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<h3 class="teachers__name">Amanda Stone</h3>
+								<p class="teachers__prof">English Teacher</p>
+							</li>
+							<li class="teachers__item teachers__item--green">
+								<img class="teachers__photo" src="img/teacher-2.jpg" alt="Sarah Smith" width="150" height="150">
+								<div class="teachers__link-wrapper">
+									<ul class="teachers__link-list">
+										<li class="teachers__link-item">
+											<a class="teachers__links teachers__links--tw" href="">
+												<span class="visually-hidden">Twitter</span>
+											</a>
+										</li>
+										<li class="teachers__link-item">
+											<a class="teachers__links teachers__links--in" href="">
+												<span class="visually-hidden">LinkedIn</span>
+											</a>
+										</li>
+										<li class="teachers__link-item">
+											<a class="teachers__links teachers__links--fb" href="">
+												<span class="visually-hidden">Facebook</span>
+											</a>
+										</li>
+										<li class="teachers__link-item">
+											<a class="teachers__links teachers__links--sk" href="">
+												<span class="visually-hidden">Skype</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<h3 class="teachers__name">Sarah Smith</h3>
+								<p class="teachers__prof">Math Teacher</p>
+							</li>
+							<li class="teachers__item teachers__item--red">
+								<img class="teachers__photo" src="img/teacher-3.jpg" alt="Robert White" width="150" height="150">
+								<div class="teachers__link-wrapper">
+									<ul class="teachers__link-list">
+										<li class="teachers__link-item">
+											<a class="teachers__links teachers__links--tw" href="">
+												<span class="visually-hidden">Twitter</span>
+											</a>
+										</li>
+										<li class="teachers__link-item">
+											<a class="teachers__links teachers__links--in" href="">
+												<span class="visually-hidden">LinkedIn</span>
+											</a>
+										</li>
+										<li class="teachers__link-item">
+											<a class="teachers__links teachers__links--fb" href="">
+												<span class="visually-hidden">Facebook</span>
+											</a>
+										</li>
+										<li class="teachers__link-item">
+											<a class="teachers__links teachers__links--sk" href="">
+												<span class="visually-hidden">Skype</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<h3 class="teachers__name">Robert White</h3>
+								<p class="teachers__prof">English Teacher</p>
+							</li>
+							<li class="teachers__item teachers__item--blue">
+								<img class="teachers__photo" src="img/teacher-4.jpg" alt="Brendan Wills" width="150" height="150">
+								<div class="teachers__link-wrapper">
+									<ul class="teachers__link-list">
+										<li class="teachers__link-item">
+											<a class="teachers__links teachers__links--tw" href="">
+												<span class="visually-hidden">Twitter</span>
+											</a>
+										</li>
+										<li class="teachers__link-item">
+											<a class="teachers__links teachers__links--in" href="">
+												<span class="visually-hidden">LinkedIn</span>
+											</a>
+										</li>
+										<li class="teachers__link-item">
+											<a class="teachers__links teachers__links--fb" href="">
+												<span class="visually-hidden">Facebook</span>
+											</a>
+										</li>
+										<li class="teachers__link-item">
+											<a class="teachers__links teachers__links--sk" href="">
+												<span class="visually-hidden">Skype</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<h3 class="teachers__name">Brendan Wills</h3>
+								<p class="teachers__prof">Babysitter</p>
+							</li>
+							<li class="teachers__item teachers__item--green">
+								<img class="teachers__photo" src="img/teacher-2.jpg" alt="Sarah Smith" width="150" height="150">
+								<div class="teachers__link-wrapper">
+									<ul class="teachers__link-list">
+										<li class="teachers__link-item">
+											<a class="teachers__links teachers__links--tw" href="">
+												<span class="visually-hidden">Twitter</span>
+											</a>
+										</li>
+										<li class="teachers__link-item">
+											<a class="teachers__links teachers__links--in" href="">
+												<span class="visually-hidden">LinkedIn</span>
+											</a>
+										</li>
+										<li class="teachers__link-item">
+											<a class="teachers__links teachers__links--fb" href="">
+												<span class="visually-hidden">Facebook</span>
+											</a>
+										</li>
+										<li class="teachers__link-item">
+											<a class="teachers__links teachers__links--sk" href="">
+												<span class="visually-hidden">Skype</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<h3 class="teachers__name">Sarah Smith</h3>
+								<p class="teachers__prof">Math Teacher</p>
+							</li>
+							<li class="teachers__item teachers__item--red">
+								<img class="teachers__photo" src="img/teacher-3.jpg" alt="Robert White" width="150" height="150">
+								<div class="teachers__link-wrapper">
+									<ul class="teachers__link-list">
+										<li class="teachers__link-item">
+											<a class="teachers__links teachers__links--tw" href="">
+												<span class="visually-hidden">Twitter</span>
+											</a>
+										</li>
+										<li class="teachers__link-item">
+											<a class="teachers__links teachers__links--in" href="">
+												<span class="visually-hidden">LinkedIn</span>
+											</a>
+										</li>
+										<li class="teachers__link-item">
+											<a class="teachers__links teachers__links--fb" href="">
+												<span class="visually-hidden">Facebook</span>
+											</a>
+										</li>
+										<li class="teachers__link-item">
+											<a class="teachers__links teachers__links--sk" href="">
+												<span class="visually-hidden">Skype</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<h3 class="teachers__name">Robert White</h3>
+								<p class="teachers__prof">English Teacher</p>
+							</li>
+							<li class="teachers__item teachers__item--yellow">
+								<img class="teachers__photo" src="img/teacher-1.jpg" alt="Amanda Stone" width="150" height="150">
+								<div class="teachers__link-wrapper">
+									<ul class="teachers__link-list">
+										<li class="teachers__link-item">
+											<a class="teachers__links teachers__links--tw" href="">
+												<span class="visually-hidden">Twitter</span>
+											</a>
+										</li>
+										<li class="teachers__link-item">
+											<a class="teachers__links teachers__links--in" href="">
+												<span class="visually-hidden">LinkedIn</span>
+											</a>
+										</li>
+										<li class="teachers__link-item">
+											<a class="teachers__links teachers__links--fb" href="">
+												<span class="visually-hidden">Facebook</span>
+											</a>
+										</li>
+										<li class="teachers__link-item">
+											<a class="teachers__links teachers__links--sk" href="">
+												<span class="visually-hidden">Skype</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<h3 class="teachers__name">Amanda Stone</h3>
+								<p class="teachers__prof">English Teacher</p>
+							</li>
+
+						</ul>
+					</div>
+					<button class="teachers__btn teachers__btn--towards">
+						<span class="visually-hidden">Towards</span>
+					</button>
+				</div>
+			</div>
+		</section>
+
+		<section class="gallery container" id="section_gallery">
+			<h2 class="gallery__main-title main-title">Our Gallery</h2>
+			<div class="gallery__button-wrapper">
+				<button class="gallery__button">View all</button>
+				<button class="gallery__button">Charity</button>
+				<button class="gallery__button">Nature</button>
+				<button class="gallery__button">Children</button>
+			</div>
+			<div class="gallery__photo-wrapper">
+				<img class="gallery__photo" src="img/gallery-1.jpg" alt="Photo-1" width="270" height="220">
+				<img class="gallery__photo" src="img/gallery-2.jpg" alt="Photo-2" width="270" height="220">
+				<img class="gallery__photo" src="img/gallery-3.jpg" alt="Photo-3" width="270" height="220">
+				<img class="gallery__photo" src="img/gallery-4.jpg" alt="Photo-4" width="270" height="220">
+				<img class="gallery__photo" src="img/gallery-5.jpg" alt="Photo-5" width="270" height="220">
+				<img class="gallery__photo" src="img/gallery-6.jpg" alt="Photo-6" width="270" height="220">
+				<img class="gallery__photo" src="img/gallery-7.jpg" alt="Photo-7" width="270" height="220">
+				<img class="gallery__photo" src="img/gallery-8.jpg" alt="Photo-8" width="270" height="220">
+			</div>
+			<a class="gallery__link-all btn" href="">View more</a>
+		</section>
+
+		<section class="facts" id="section_events">
+			<div class="container">
+				<h2 class="facts__title">Some Fun Facts</h2>
+				<p class="facts__description">Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod</p>
+				<ul class="facts__list">
+					<li class="facts__item facts__item--yellow">
+						<span class="facts__number">125</span>
+						<p class="facts__name">Events held</p>
+					</li>
+					<li class="facts__item facts__item--green">
+						<span class="facts__number">539</span>
+						<p class="facts__name">Happy funs</p>
+					</li>
+					<li class="facts__item facts__item--red">
+						<span class="facts__number">375</span>
+						<p class="facts__name">Testimonials</p>
+					</li>
+					<li class="facts__item facts__item--blue">
+						<span class="facts__number">135</span>
+						<p class="facts__name">Teachers</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="news container" id="section_news">
+			<h2 class="news__main-title main-title">Latest News</h2>
+			<div class="news__wrapper">
+				<article class="news__part news__part--yellow">
+					<h3 class="news__title">The standard chunk of Lorem.</h3>
+					<span class="news__date">10 July</span>
+					<span class="news__span">
+						Jone Joe
+						<svg class="inline-svg-news" width="14" height="14">
+							<use xlink:href="#svg_user"></use>
+						</svg>
+					</span>
+					<span class="news__span">
+						4 Comments
+						<svg class="inline-svg-news" width="14" height="14">
+							<use xlink:href="#svg_comment"></use>
+						</svg>
+					</span>
+					<p class="news__description">
+						Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature.
+					</p>
+					<a href="#" class="news__link"> &#187 Read More</a>
+				</article>
+				<article class="news__part news__part--green">
+					<h3 class="news__title">Vestibulum congue massa vitae.</h3>
+					<span class="news__date">10 July</span>
+					<span class="news__span">
+						Jone Joe
+						<svg class="inline-svg-news" width="14" height="14">
+							<use xlink:href="#svg_user"></use>
+						</svg>
+					</span>
+					<span class="news__span">
+						4 Comments
+						<svg class="inline-svg-news" width="14" height="14">
+							<use xlink:href="#svg_comment"></use>
+						</svg>
+					</span>
+					<p class="news__description">
+						Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature.
+					</p>
+					<a href="#" class="news__link"> &#187 Read More</a>
+				</article>
+				<article class="news__part news__part--blue">
+					<h3 class="news__title">Curabitur ac nulla sodales risus.</h3>
+					<span class="news__date">10 July</span>
+					<span class="news__span">
+						Jone Joe
+						<svg class="inline-svg-news" width="14" height="14">
+							<use xlink:href="#svg_user"></use>
+						</svg>
+					</span>
+					<span class="news__span">
+						4 Comments
+						<svg class="inline-svg-news" width="14" height="14">
+							<use xlink:href="#svg_comment"></use>
+						</svg>
+					</span>
+					<p class="news__description">
+						Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature.
+					</p>
+					<a href="#" class="news__link"> &#187 Read More</a>
+				</article>
+			</div>
+			<a class="news__link-all btn" href="">View more</a>
+		</section>
+
+		<section class="contacts" id="section_contact">
+			<div class="container">
+				<div class="contacts__address">
+					<h2 class="contacts__title">Our Address</h2>
+					<p class="contacts__description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<span class="contacts__span contacts__span--address">
+						9/4/C Ring Road,Garden Street
+						<br>Dhaka,Bangladesh-1200
+					</span>
+					<span class="contacts__span contacts__span--email">
+						hello@example.com
+					</span>
+					<span class="contacts__span contacts__span--tel">
+						3333 222 1111
+					</span>
+				</div>
+
+				<form class="contacts__form" action="#" method="post">
+					<label class="contacts__form-label">
+						<svg class="inline-svg-contacts" width="14" height="11">
+							<use xlink:href="#svg_user"></use>
+						</svg>
+						<input class="contacts__form-input contacts__form-input--name" type="text" name="name" placeholder="First name" required>
+					</label>
+					<label class="contacts__form-label">
+						<svg class="inline-svg-contacts" width="14" height="11">
+							<use xlink:href="#svg_letter"></use>
+						</svg>
+						<input class="contacts__form-input contacts__form-input--email" type="email" name="email" placeholder="Email address" required>
+					</label>
+					<label class="contacts__form-label">
+						<svg class="inline-svg-contacts" width="14" height="11">
+							<use xlink:href="#svg_comment"></use>
+						</svg>
+						<textarea class="contacts__form-input contacts__form-input--message" name="message" rows="5" placeholder="Write message"></textarea>
+					</label>
+					
+					<button class="contacts__form-button">Send message</button>
+				</form>
+			</div>
+		</section>
+	</main>
+
+
+
+	<footer class="page-footer line">
+		<section class="top-footer">
+			<div class="container">
+				<div class="top-footer__part">
+					<h2 class="visually-hidden">Kidz School</h2>
+					<img class="top-footer__desc-logo" src="img/logo-white.png" width="152" height="48" alt="White_logo">
+					<p class="top-footer__desc-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa officia.Lorem ipsum dolor sit amet.</p>
+					<p class="top-footer__desc-text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+				<div class="top-footer__part">
+					<h2 class="top-footer__title">Useful Links</h2>
+					<ul class="top-footer__link-list">
+						<li class="top-footer__link-item">
+							<a class="top-footer__link-link" href="">&#187 Web Design</a>
+						</li>
+						<li class="top-footer__link-item">
+							<a class="top-footer__link-link" href="">&#187 About Kidz School</a>
+						</li>
+						<li class="top-footer__link-item">
+							<a class="top-footer__link-link" href="">&#187 Mobile</a>
+						</li>
+						<li class="top-footer__link-item">
+							<a class="top-footer__link-link" href="">&#187 Why Kidz School</a>
+						</li>
+						<li class="top-footer__link-item">
+							<a class="top-footer__link-link" href="">&#187 Social Media</a>
+						</li>
+					</ul>
+				</div>
+				<div class="top-footer__part">
+					<h2 class="top-footer__title">Resent Post</h2>
+					<ul class="top-footer__post-list">
+						<li class="top-footer__post-item">
+							<a class="top-footer__post-link" href="">
+								<img class="top-footer__post-photo" src="img/footer-post-1.jpg" width="59" height="59" alt="Post-1">
+							</a>
+							<p class="top-footer__post-text">Clean Website Gives More Experience To The Visitors
+							<span class="top-footer__post-span">Feb 12 - 2019</span></p>
+						</li>
+						<li class="top-footer__post-item">
+							<a class="top-footer__post-link" href="">
+								<img class="top-footer__post-photo" src="img/footer-post-2.jpg" width="59" height="59" alt="Post-2">
+							</a>
+							<p class="top-footer__post-text">Huge Offers Unlimited Design Elements
+							<span class="top-footer__post-span">Feb 12 - 2019</span></p>
+						</li>
+						<li class="top-footer__post-item">
+							<a class="top-footer__post-link" href="">
+								<img class="top-footer__post-photo" src="img/footer-post-3.jpg" width="59" height="59" alt="Post-3">
+							</a>
+							<p class="top-footer__post-text">How You Can Impact Your Customers With Design
+							<span class="top-footer__post-span">Feb 12 - 2019</span></p>
+						</li>
+					</ul>
+				</div>
+				<div class="top-footer__part">
+					<h2 class="top-footer__title">Mailing List</h2>
+					<p class="top-footer__form-text">Sign up for our mailing list to get latest updates and offers.</p>
+					<form class="top-footer__form-form" action="#" method="post">
+						<label class="top-footer__form-label">
+							<input class="top-footer__form-input" type="email" name="email-footer" placeholder="Email address" required>
+						</label>
+						<button class="top-footer__form-button">
+							<span class="visually-hidden">Send</span>
+						</button>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<section class="bottom-footer">
+			<div class="container">
+				<h2 class="visually-hidden">Copyritht and Social Links</h2>
+				<p class="bottom-footer__text">&#169 2016 Example.com. All Rights Reserved</p>
+				<ul class="bottom-footer__list">
+					<li class="bottom-footer__item">
+						<a href="#" class="bottom-footer__soc-button bottom-footer__soc-button--tw">
+							<span class="visually-hidden">Twitter</span>
+						</a>
+					</li>
+					<li class="bottom-footer__item">
+						<a href="#" class="bottom-footer__soc-button bottom-footer__soc-button--in">
+							<span class="visually-hidden">LinkedIn</span>
+						</a>
+					</li>
+					<li class="bottom-footer__item">
+						<a href="#" class="bottom-footer__soc-button bottom-footer__soc-button--fb">
+							<span class="visually-hidden">Facebook</span>
+						</a>
+					</li>
+					<li class="bottom-footer__item">
+						<a href="#" class="bottom-footer__soc-button bottom-footer__soc-button--sk">
+							<span class="visually-hidden">Skype</span>
+						</a>
+					</li>
+					<li class="bottom-footer__item">
+						<a href="#" class="bottom-footer__soc-button bottom-footer__soc-button--pin">
+							<span class="visually-hidden">Pinterest</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+
+	</footer>
+	
+
+	<script> 
+		var width = 273.5; // ширина блока
+		var count = 4; // количество блоков
+		var carousel = document.querySelector('.teachers');
+		var list = carousel.querySelector('.teachers__list');
+		var listElems = carousel.querySelectorAll('.teachers__item');
+		var btnBack = carousel.querySelector('.teachers__btn--backwards');
+		var btnNext = carousel.querySelector('.teachers__btn--towards');
+		var position = 0; // текущий сдвиг влево
+
+		btnBack.style.backgroundColor = 'rgb(157, 139, 198)';
+
+		btnBack.onclick = function() {
+			// сдвиг влево
+			position = Math.min(position + width, 0)
+			list.style.marginLeft = position + 'px';
+
+			if (position == 0) {
+				btnBack.style.backgroundColor = 'rgb(157, 139, 198)';
+			}
+			btnNext.style.backgroundColor = '';
+		};
+
+		btnNext.onclick = function() {
+			// сдвиг вправо
+			position = Math.max(position - width, -width * (listElems.length - count));
+			list.style.marginLeft = position + 'px';
+
+			if (position == (-width * (listElems.length - count))) {
+				btnNext.style.backgroundColor = 'rgb(157, 139, 198)';
+			}
+			btnBack.style.backgroundColor = '';
+		};
+	</script>
+
+
+</body>
+</html>
